@@ -1,0 +1,9 @@
+.containerAbout{
+  color: white;
+  padding: 10px;
+}
+
+.logos{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
