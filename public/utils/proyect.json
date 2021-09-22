@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Mediax",
+    "shortDescription": "Mediax es un proyecto de Video Streaming realizado con HTML y SCSS",
+    "description": "Mediax es un proyecto de Video Streaming realizado con HTML y SCSS, en el cual utilize Framework y librerias de CSS como Bootstrap para el front, Slick para realizar los carouseles de imagenes y Pushbar para realizar un menu desplegable en la seccion Catalogo. La pagina es responsive aplicando la metodologia Mobile-First, ademas contiene etiquetas de SEO que ayudan al posicionamiento de la pagina",
+    "technologies": 
+    {
+      "html": "./img/html.png",
+      "bootstrap": "./img/bootstrap.png"
+    },
+    "test": "/img/mediax.PNG"
+  },
+  {
+    "id": 2,
+    "name": "GoodGames",
+    "shortDescription": "GoodGames es un proyecto basado en un E-comerce realizado con HTML, SCSS y JavaScript",
+    "description": "Mediax es un proyecto de Video Streaming realizado con HTML y SCSS, en el cual utilize Framework y librerias de CSS como Bootstrap para el front, Slick para realizar los carouseles de imagenes y Pushbar para realizar un menu desplegable en la seccion Catalogo. La pagina es responsive aplicando la metodologia Mobile-First, ademas contiene etiquetas de SEO que ayudan al posicionamiento de la pagina",
+    "technologies": 
+    {
+      "html": "./img/html.png",
+      "bootstrap": "./img/bootstrap.png"
+    },
+    "test": "/img/goodgames.PNG"  
+  }
+]

@@ -54,7 +54,7 @@ export default function Layouts({ children, title, description }) {
           </Link>
         </div>
       </nav>
-      <div>{children}</div>
+      <>{children}</>
       <footer>footer</footer>
     </main>
   );

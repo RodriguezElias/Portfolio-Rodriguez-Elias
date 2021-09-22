@@ -1,6 +1,9 @@
 import Layouts from "../components/Layouts";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
+import Ytiped from "../components/Ytiped";
+
+
 export default function index() {
   return (
     <div className={styles.containerPage}>
@@ -12,8 +15,9 @@ export default function index() {
           <header className={styles.header}>
             <div className={styles.containerPresentation}>
               <h1 className={styles.presentation}>
-                Hola <br />Me llamo <span className={styles.name}>Elias Rodriguez</span>  
+                Hola <br />Me llamo 
               </h1>
+              <Ytiped/> 
               <h2 className={styles.profession}>Soy Desarrollador Front-End</h2>
             </div>
             <div className={styles.imagePersonal}>

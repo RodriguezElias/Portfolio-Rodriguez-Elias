@@ -1,0 +1,74 @@
+.card{
+  /* background-image: url(../public/img/mediax.PNG); */
+  background-color: #ff1433e0;
+  background-blend-mode: multiply; 
+  background-size: cover;
+  background-position: right;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  align-items: flex-end;
+  transition: transform 500ms ease;
+  overflow: hidden;
+}
+.card:hover{
+  transform: scale(1.05);
+}
+
+.cardContent{
+  padding: 1rem;
+  background: linear-gradient(
+    hsl(0 0% 0% / 0),
+    hsl(20 0% 0% / 0.8) 20%,
+    hsl(0 0% 0% / 1)
+  );
+  transform: translateY(58%);
+  transition: transform 500ms ease;
+}
+.card:hover .cardContent{
+  transform: translateY(0);
+  transition-delay: 500ms;
+}
+.cardContent > *:not(.cardTitle){
+  opacity: 0;
+  transition: opacity 500ms linear;
+}
+.card:hover .cardContent > *:not(.cardTitle){
+  opacity: 1;
+  transition-delay: 1000ms;
+}
+.cardTitle{
+  position: relative;
+  width: max-content;
+  padding: 10px;
+}
+.cardInfo{
+  color: rgb(255 255 255 / 0.85);
+}
+.cardTitle::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: #FF1433;
+  transform: scaleX(0);
+  transform-origin: left ;
+  transition: transform 500ms ease;
+}
+.card:hover .cardTitle::after{
+  transform: scaleX(1);
+}
+.button{
+  color: #fff;
+  border-radius:0.25em ;
+  cursor: pointer;
+  padding: 1em 1.25em;
+  border-style: none;
+  background: #FF1433;
+}
+.button:hover, .button:focus{
+  background-color: #5e0713;
+
+}
