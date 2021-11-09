@@ -1,26 +1,34 @@
-[
-  {
-    "id": 1,
-    "name": "Mediax",
-    "shortDescription": "Mediax es un proyecto de Video Streaming realizado con HTML y SCSS",
-    "description": "Mediax es un proyecto de Video Streaming realizado con HTML y SCSS, en el cual utilize Framework y librerias de CSS como Bootstrap para el front, Slick para realizar los carouseles de imagenes y Pushbar para realizar un menu desplegable en la seccion Catalogo. La pagina es responsive aplicando la metodologia Mobile-First, ademas contiene etiquetas de SEO que ayudan al posicionamiento de la pagina",
-    "technologies": 
+{
+  "proyects": [
     {
-      "html": "./img/html.png",
-      "bootstrap": "./img/bootstrap.png"
+      "id": 1,
+      "name": "Mediax",
+      "shortDescription": "Mediax es un proyecto de Video Streaming realizado con HTML y SCSS",
+      "description": "Mediax es un proyecto de Video Streaming realizado con HTML y SCSS, en el cual utilize Frameworks y librerias de CSS como Bootstrap para el front, Slick para realizar los carouseles de imagenes y Pushbar para realizar un menu desplegable en la seccion Catalogo. La pagina es responsive aplicando la metodologia Mobile-First, ademas contiene etiquetas de SEO que ayudan al posicionamiento de la pagina",
+      "technologies": [
+        {
+          "img-technology": "/img/html.png"
+        },
+        {
+          "img-technology": "/img/bootstrap.png"
+        }
+      ],
+      "img": "/img/mediax.PNG"
     },
-    "test": "/img/mediax.PNG"
-  },
-  {
-    "id": 2,
-    "name": "GoodGames",
-    "shortDescription": "GoodGames es un proyecto basado en un E-comerce realizado con HTML, SCSS y JavaScript",
-    "description": "Mediax es un proyecto de Video Streaming realizado con HTML y SCSS, en el cual utilize Framework y librerias de CSS como Bootstrap para el front, Slick para realizar los carouseles de imagenes y Pushbar para realizar un menu desplegable en la seccion Catalogo. La pagina es responsive aplicando la metodologia Mobile-First, ademas contiene etiquetas de SEO que ayudan al posicionamiento de la pagina",
-    "technologies": 
     {
-      "html": "./img/html.png",
-      "bootstrap": "./img/bootstrap.png"
-    },
-    "test": "/img/goodgames.PNG"  
-  }
-]
+      "id": 2,
+      "name": "GoodGames",
+      "shortDescription": "GoodGames es un proyecto basado en un E-comerce que simula su funcionalidad ,realizado con HTML, SCSS y JavaScript",
+      "description": "GoodGames es un proyecto que simula la funcionalidad de un E-comerce realizado con HTML, SCSS y JavaScript, en este trabajo decidí no usar librerias ni Frameworks, para asi aprender a crear mis propios elementos y manejar el DOM con JavaScript. Las animaciones y funcionalidades como por ejemplo agregar un producto al carrito de compras, estan hechas con JavaScript. La pagina es responsive aplicando la metodologia Mobile-First.",
+      "technologies": [
+        {
+          "img-technology": "/img/html.png"
+        },
+        {
+          "img-technology": "/img/javascript.png"
+        }
+      ],
+      "img": "/img/goodgames.PNG"
+    }
+  ]
+}

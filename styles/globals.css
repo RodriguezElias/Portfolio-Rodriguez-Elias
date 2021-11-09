@@ -2,36 +2,30 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-    background-color:#0c0d0f;
+  font-family: raleway-medium;
+  background-color: #0c0d0f;
 }
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
 * {
   box-sizing: border-box;
 }
+a {
+  color: inherit;
+  text-decoration: none;
+  font-family: poppins-bold;
+}
 h1 {
-  font-family:poppins-bold;
+  font-family: poppins-bold;
 }
-h2{
-font-family: raleway-medium;
+h2 {
+  font-family: raleway-medium;
 }
-
 
 /*agregado de fuentes*/
-@font-face{
-  font-family:poppins-bold;
+@font-face {
+  font-family: poppins-bold;
   src: url(../public/fonts/poppins/Poppins-Bold.ttf);
 }
-@font-face{
-  font-family:raleway-medium;
+@font-face {
+  font-family: raleway-medium;
   src: url(../public/fonts/raleway/Raleway-Medium.ttf);
 }
-
-
-  

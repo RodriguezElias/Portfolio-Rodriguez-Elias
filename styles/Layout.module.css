@@ -12,7 +12,7 @@
   color: #fff;
 }
 .listItem{
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.945);
   right: -100%;
   height: 100%;
   width: 100%;
@@ -22,19 +22,27 @@
   z-index: 1;
   display: flex;
   flex-direction: column;
-
+  transition: 0.4s;
+}
+.containerCloseButton{
+  align-self: flex-end;
 }
 .closeButton{
   border: none;
   background: none;
   cursor: pointer;
+  padding: 10px;
   color: #fff;
 }
 .navItem{
-  font-size: 1rem;
+  font-size: 1.3rem;
   color: #fff;
-  padding: 5px;
-  font-family: poppins-bold;;
+  padding: 10px;
+}
+
+.main{
+  padding: 15px;
+  color: white;
 }
 
 .open{
@@ -42,8 +50,3 @@
 }
 
 
-/*agregado de fuentes*/
-@font-face{
-  font-family:poppins-bold;
-  src: url(../public/fonts/poppins/Poppins-Regular.ttf);
-}

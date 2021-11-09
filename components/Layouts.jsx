@@ -2,18 +2,17 @@ import Link from "next/dist/client/link";
 import Head from "next/head";
 import styles from "../styles/Layout.module.css";
 
-
 export default function Layouts({ children, title, description }) {
   const openMenu = () => {
-    const burguer_menu = document.querySelector('.Layout_listItem__1Dsua');
+    const burguer_menu = document.querySelector(".Layout_listItem__1Dsua");
     burguer_menu.classList.toggle(styles.open);
   };
   const closeMenu = () => {
-    const button_close = document.querySelector('.Layout_listItem__1Dsua')
-    button_close.classList.remove(styles.open)
-  }
+    const button_close = document.querySelector(".Layout_listItem__1Dsua");
+    button_close.classList.remove(styles.open);
+  };
   return (
-    <main className={styles.main}>
+    <>
       <Head>
         <title>{title}</title>
         <meta name="description" content={description} />
@@ -27,13 +26,21 @@ export default function Layouts({ children, title, description }) {
       </Head>
       <nav className={styles.navbar}>
         <div className="menuBar">
-          <button title="Open" onClick={openMenu} className={styles.burgerButton}>
+          <button
+            title="Open"
+            onClick={openMenu}
+            className={styles.burgerButton}
+          >
             <i className="fas fa-bars fa-3x"></i>
           </button>
         </div>
         <div className={styles.listItem}>
-          <div>
-            <button title="Close" onClick={closeMenu} className={styles.closeButton}>
+          <div className={styles.containerCloseButton}>
+            <button
+              title="Close"
+              onClick={closeMenu}
+              className={styles.closeButton}
+            >
               <i className="fas fa-times fa-2x"></i>
             </button>
           </div>
@@ -54,9 +61,11 @@ export default function Layouts({ children, title, description }) {
           </Link>
         </div>
       </nav>
-      <>{children}</>
+      <main className={styles.main}>
+        <>{children}</>
+      </main>
       <footer>footer</footer>
-    </main>
+    </>
   );
 }
 

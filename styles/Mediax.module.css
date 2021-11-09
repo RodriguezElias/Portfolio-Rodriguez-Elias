@@ -1,0 +1,31 @@
+.containerDetail{
+  color: white;
+}
+.containerDetail h1{
+  font-size: 2.5rem;
+  padding: 5px;
+  border-bottom: solid 2px #FF1433 ;
+  
+}
+.containerButtons{
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+.button{
+  color: #fff;
+  background: #FF1433;
+  margin-left: 5px;
+  border-radius:0.25em ;
+  cursor: pointer;
+  padding: 1em 1.25em;
+  border-style: none;
+}
+.button:hover, .button:focus{
+  background-color: #5e0713;
+
+}
+.logos{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}

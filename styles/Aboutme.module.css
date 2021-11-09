@@ -1,6 +1,10 @@
 .containerAbout{
   color: white;
-  padding: 10px;
+}
+.containerAbout h2{
+  padding: 5px;
+  border-bottom: solid 2px #FF1433;
+  width: fit-content;
 }
 
 .logos{
