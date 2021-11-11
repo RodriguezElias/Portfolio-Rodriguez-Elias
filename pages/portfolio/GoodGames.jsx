@@ -1,9 +1,8 @@
 import { useState } from "react";
 import Image from "next/dist/client/image";
-import Link from "next/dist/client/link";
 import Layouts from "../../components/Layouts";
 import json from "../../public/utils/proyect.json";
-import styles from "../../styles/GoodGames.module.css";
+import styles from "../../styles/mediax.module.css";
 
 export default function GoodGames() {
   const [detail, setDetail] = useState(json.proyects[1]);
@@ -12,12 +11,13 @@ export default function GoodGames() {
     <Layouts title="GoodGames | Rodriguez Elias" description="Detalle Proyecto">
       <div className={styles.containerDetail}>
         <h1>{`${detail.name}`}</h1>
-        <div>
-          <p>{`${detail.description}`}</p>
+        <p className={styles.description}>{`${detail.description}`}</p>
+        <div className={styles.image}>
           <Image
-            src="/img/goodgames.png"
+            src="/img/goodgamesgif.gif"
+            alt="Goodgames"
             width={250}
-            height={250}
+            height={200}
             className={styles.img}
             layout="responsive"
           ></Image>
@@ -52,6 +52,7 @@ export default function GoodGames() {
                 <div key={index}>
                   <Image
                     src={logo["img-technology"]}
+                    alt="Logo"
                     width={150}
                     height={150}
                     layout="responsive"

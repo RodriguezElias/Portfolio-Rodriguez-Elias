@@ -6,17 +6,17 @@ import styles from "../../styles/Mediax.module.css";
 
 export default function Mediax() {
   const [detail, setDetail] = useState(json.proyects[0]);
-  console.log(detail.technologies[0]["img-technology"]);
   return (
     <Layouts title="Mediax | Rodriguez Elias" description="Detalle Proyecto">
       <div className={styles.containerDetail}>
         <h1>{`${detail.name}`}</h1>
-        <div>
-          <p>{`${detail.description}`}</p>
+        <p className={styles.description}>{`${detail.description}`}</p>
+        <div className={styles.image}>
           <Image
-            src="/img/mediax.png"
+            src="/img/recording.gif"
+            alt="mediax"
             width={250}
-            height={250}
+            height={200}
             layout="responsive"
           ></Image>
         </div>
@@ -24,8 +24,7 @@ export default function Mediax() {
           <button className={styles.button}>
             <a
               href="https://rodriguezelias.github.io/ProyectoFinal-Mediax/index.html"
-              target="_blank"
-              rel="noopener noreferrer"
+              
             >
               {" "}
               Pagina{" "}
@@ -34,21 +33,21 @@ export default function Mediax() {
           <button className={styles.button}>
             <a
               href="https://github.com/RodriguezElias/ProyectoFinal-Mediax"
-              target="_blank"
-              rel="noopener noreferrer"
+              
             >
               {" "}
               Repositorio
             </a>
           </button>
         </div>
-        <div>
-          <h2>Tecnologias</h2>
+        <div className={styles.containerTechnologies}>
+          <h2>Tecnologias Utilizadas</h2>
           <div className={styles.logos}>
-            {detail.technologies.map((logo,index) => {
+            {detail.technologies.map((logo, index) => {
               return (
                 <Image
                   key={index}
+                  alt="logo"
                   src={logo["img-technology"]}
                   width={150}
                   height={150}

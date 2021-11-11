@@ -29,3 +29,10 @@ h2 {
   font-family: raleway-medium;
   src: url(../public/fonts/raleway/Raleway-Medium.ttf);
 }
+
+@media(min-width:1400px){
+  html{
+    font-size: 19px;
+  }
+
+}

@@ -1,19 +1,16 @@
-.containerContact {
-}
-.containerContact h1 {
-}
+
 .containerItems {
   display: grid;
   grid-template-columns: 1fr;
   row-gap: 10px;
 }
 .items {
+  height: 170px;
   padding: 10px;
   background: rgba(255, 255, 255, 0.08);
 }
 .items p:hover,
-.items a:hover,
-.itemIconSocial:hover {
+.items a:hover{
   color: #ff1433;
 }
 .itemTitle {
@@ -27,13 +24,48 @@
   background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
 }
+.itemValue{
+  margin-left: 40px;
+}
 .containerIconSocial {
+  margin-left: 40px;
+  margin-bottom: 5px;
   display: flex;
   align-items: center;
+
+}
+.containerIconSocial:hover{
+  color: #ff1433;
 }
 .itemIconSocial {
   margin-right: 8px;
   padding: 8px;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
+}
+.backgroundTitle{
+  margin: 20px auto;
+  padding: 10px;
+  background: #d40924;
+}
+
+@media(min-width:768px){
+  .backgroundTitle{
+    width: 85%;
+  }
+  .containerItems{
+    width: 85%;
+    margin: auto;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+
+  }
+}
+@media(min-width:768px){
+  .backgroundTitle{
+    width: 70%;
+  }
+  .containerItems{
+    width: 70%;
+  }
 }

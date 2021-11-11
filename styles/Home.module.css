@@ -1,11 +1,4 @@
-.containerPage{
-  height: 100vh;
-}
 .containerMain{
-  display: flex;
-  justify-content: flex-end;
-}
-.header{
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -28,23 +21,45 @@
 }
 .imagePersonal{
   width: 80%;
-  height: 250px;
 }
 .img{
   border-radius: 50%;
   text-align: center;
   align-self: center;
 }
-.prueba{
-  color: red;
-}
 
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
+
+@media (min-width: 768px) {
+  .containerMain{
+    flex-direction: row;
+    width: 90%;
+    height: 60vh;
+  }
+  .containerPresentation{
+    width: 60%;
+  }
+  .imagePersonal{
+    width: 40%;
   }
 }
-
+@media (min-width: 1024px) {
+  .containerMain{
+    width: 90%;
+    height: 60vh;
+    margin: auto;
+  }
+}
+@media (min-width: 1300px) {
+  .containerMain{
+    width: 75%;
+    margin: auto;
+  }
+  .containerPresentation{
+    width: 60%;
+  }
+  .imagePersonal{
+    width: 35%;
+  }
+}
 
   

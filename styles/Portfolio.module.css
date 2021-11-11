@@ -1,7 +1,37 @@
-.containerProyect{
-  color: #fff;
-}
-.containerProyect{
+.containerProyect {
   font-size: 1.1rem;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  overflow: hidden;
+}
+.backgroundTitle {
+  padding: 10px;
+  background: #d40924;
+  margin: 20px auto;
 }
 
+@media (min-width: 768px) {
+  .backgroundTitle {
+    width: 85%;
+  }
+  .containerProyect {
+    width: 85%;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1300px) {
+  .containerProyect {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (min-width: 1400px) {
+  .backgroundTitle {
+    width: 70%;
+  }
+  .containerProyect {
+    width: 70%;
+  }
+}

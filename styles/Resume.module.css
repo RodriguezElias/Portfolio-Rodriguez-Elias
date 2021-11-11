@@ -1,9 +1,72 @@
-.imagePersonal{
-  width: 500px;
-  height: 500px;
-  
-  
+.containerFile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.img{
+.textDownload {
+  font-size: 1.2rem;
+}
+.textDownload:hover {
+  color: red;
+}
+.iconFile {
+  margin-left: 15px;
+}
+.containerStudies,
+.studies {
+  position: relative;
+}
+.studies {
+  padding-left: 25px;
+  margin-left: 5px;
+  border-left: 2px solid rgba(255, 255, 255, 0.2);
+}
+.titleStudies::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
+  left: -9px;
+  top: 3%;
+  background-color: #ff1433;
+  border: 2px solid #ff1433;
+}
+.titleStudies {
+  color: #ff1433;
+}
+.studies h3 {
+  width: max-content;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 5px 15px;
+}
+.listLocation li {
+  padding: 5px;
+}
+.backgroundTitle {
+  margin: 20px auto;
+  padding: 10px;
+  background: #d40924;
+}
+@media (min-width: 768px) {
+  .backgroundTitle {
+    width: 85%;
+  }
+  .containerResume {
+    width: 85%;
+    margin: auto;
+  }
+}
+@media (min-width: 1024px) {
+  .containerStudies{
+    width: 60%;
+  }
+}
+@media (min-width: 1400px) {
+  .backgroundTitle {
+    width: 70%;
+  }
+  .containerResume {
+    width: 70%;
+  }
 }

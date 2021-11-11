@@ -7,7 +7,37 @@
   width: fit-content;
 }
 
-.logos{
+.containerLogos{
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.backgroundTitle{
+  margin: 20px auto;
+  padding: 10px;
+  background: #d40924;
+}
+@media(min-width:768px){
+  .backgroundTitle{
+    width: 85%;
+  }
+  .containerAbout{
+    width: 85%;
+    margin: auto;
+  }
+  .containerLogos{
+    width: 80%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+@media(min-width:1400px){
+  .backgroundTitle{
+    width: 70%;
+  }
+  .containerAbout{
+    width: 70%;
+  }
+  .containerLogos{
+    width: 70%;
+  }
 }

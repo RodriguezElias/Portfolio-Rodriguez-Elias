@@ -10,9 +10,9 @@ export default function Card({ title, description, imgBackground, params }) {
       <div className={styles.cardContent}>
         <h2 className={styles.cardTitle}>{title}</h2>
         <p className={styles.cardInfo}>{description}</p>
-        <button className={styles.button}>
-          <Link href={`/portfolio/${params}`}>Mas informacion</Link>
-        </button>
+        <Link href={`/portfolio/${params}`}>
+          <button className={styles.button}>Mas informacion</button>
+        </Link>
       </div>
     </div>
   );

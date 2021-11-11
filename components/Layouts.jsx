@@ -1,4 +1,5 @@
 import Link from "next/dist/client/link";
+import Image from "next/dist/client/image";
 import Head from "next/head";
 import styles from "../styles/Layout.module.css";
 
@@ -25,7 +26,17 @@ export default function Layouts({ children, title, description }) {
         ></link>
       </Head>
       <nav className={styles.navbar}>
-        <div className="menuBar">
+        <div className={styles.menuBar}>
+          <Link href="/">
+            <div>
+              <Image
+                src="/img/ER3.png"
+                width={200}
+                height={200}
+                layout="responsive"
+              ></Image>
+            </div>
+          </Link>
           <button
             title="Open"
             onClick={openMenu}
@@ -60,6 +71,44 @@ export default function Layouts({ children, title, description }) {
             <a className={styles.navItem}>Curriculum</a>
           </Link>
         </div>
+      </nav>
+      {/* Navbar Expanded */}
+      <nav id={"navbarExpanded"} className={styles.navbarExpanded}>
+        <div className={styles.logo}>
+          <Image
+            src="/img/ER3.png"
+            width={100}
+            height={100}
+            layout="responsive"
+          ></Image>
+        </div>
+        <ul className={styles.containerMenu}>
+          <li className={styles.containerSubmenu}>
+            <Link href="/">
+              <a className={styles.navItemExpanded}>Home</a>
+            </Link>
+          </li>
+          <li className={styles.containerSubmenu}>
+            <Link href="/aboutme">
+              <a className={styles.navItemExpanded}>Sobre mi</a>
+            </Link>
+          </li>
+          <li className={styles.containerSubmenu}>
+            <Link href="/portfolio">
+              <a className={styles.navItemExpanded}>Portfolio</a>
+            </Link>
+          </li>
+          <li className={styles.containerSubmenu}>
+            <Link href="/contact">
+              <a className={styles.navItemExpanded}>Contacto</a>
+            </Link>
+          </li>
+          <li className={styles.containerSubmenu}>
+            <Link href="/resume">
+              <a className={styles.navItemExpanded}>Curriculum</a>
+            </Link>
+          </li>
+        </ul>
       </nav>
       <main className={styles.main}>
         <>{children}</>
