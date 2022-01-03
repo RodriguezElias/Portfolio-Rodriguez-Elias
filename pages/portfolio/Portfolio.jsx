@@ -6,16 +6,15 @@ import styles from "../../styles/Proyect.module.css";
 import Loader from "react-loader-spinner";
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 
-export default function GoodGames() {
+export default function Portfolio() {
   const [state, setstate] = useState(false);
-  const [detail, setDetail] = useState(json.proyects[1]);
+  const [detail, setDetail] = useState(json.proyects[3]);
   const loading = () => {
     setTimeout(() => setstate(true), 3500);
   };
   loading();
-
   return (
-    <Layouts title="GoodGames | Rodriguez Elias" description="Detalle Proyecto">
+    <Layouts title="Portfolio | Rodriguez Elias" description="Detalle Proyecto">
       <div className={styles.containerDetail}>
         <h1>{`${detail.name}`}</h1>
         <p className={styles.description}>{`${detail.description}`}</p>
@@ -32,8 +31,8 @@ export default function GoodGames() {
         ) : (
           <div className={styles.image}>
             <Image
-              src="https://firebasestorage.googleapis.com/v0/b/lero-9025b.appspot.com/o/goodgamesgif.gif?alt=media&token=ed87a017-4136-49fc-909f-e53b941feaad"
-              alt="Goodgames"
+              src="https://firebasestorage.googleapis.com/v0/b/lero-9025b.appspot.com/o/portfoliogif.gif?alt=media&token=fe7dc7f0-f448-4828-a6dc-3bf04998a34c"
+              alt="portfolio"
               width={250}
               height={200}
               className={styles.img}
@@ -43,18 +42,11 @@ export default function GoodGames() {
         )}
         <div className={styles.containerButtons}>
           <button className={styles.button}>
-            <a
-              href="https://good-games-ar.netlify.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {" "}
-              Pagina{" "}
-            </a>
+            <a href="#"> Pagina </a>
           </button>
           <button className={styles.button}>
             <a
-              href="https://github.com/RodriguezElias/GOODGAMES"
+              href="https://github.com/RodriguezElias/Portfolio-Rodriguez-Elias"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -63,20 +55,19 @@ export default function GoodGames() {
             </a>
           </button>
         </div>
-        <div>
-          <h2>Tecnologias</h2>
+        <div className={styles.containerTechnologies}>
+          <h2>Tecnologias Utilizadas</h2>
           <div className={styles.logos}>
             {detail.technologies.map((logo, index) => {
               return (
-                <div key={index}>
-                  <Image
-                    src={logo["img-technology"]}
-                    alt="Logo"
-                    width={150}
-                    height={150}
-                    layout="responsive"
-                  />
-                </div>
+                <Image
+                  key={index}
+                  alt="logo"
+                  src={logo["img-technology"]}
+                  width={150}
+                  height={150}
+                  layout="responsive"
+                />
               );
             })}
           </div>

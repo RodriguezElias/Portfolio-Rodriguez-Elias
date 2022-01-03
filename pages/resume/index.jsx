@@ -14,7 +14,7 @@ export default function resume() {
         <div className={style.containerFile}>
           <a
             className={style.textDownload}
-            href="https://drive.google.com/file/d/1O4OVn4Fm3KSz3J-RyoAdg_P8XmxqBPJc/view"
+            href="https://drive.google.com/file/d/1WIyko8FugckvQWUcLP0OdiakqglUjVpg/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
           >

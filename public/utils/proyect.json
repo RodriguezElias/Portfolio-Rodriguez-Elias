@@ -3,7 +3,7 @@
     {
       "id": 1,
       "name": "Mediax",
-      "shortDescription": "Mediax es un proyecto de Video Streaming realizado con HTML y SCSS",
+      "shortDescription": "Mediax es un proyecto Frontend de Video Streaming realizado con HTML y SCSS",
       "description": "Mediax es un proyecto de Video Streaming realizado con HTML y SCSS, en el cual utilize Frameworks y librerias de CSS como Bootstrap para el front, Slick para realizar los carouseles de imagenes y Pushbar para realizar un menu desplegable en la seccion Catalogo. La pagina es responsive aplicando la metodologia Mobile-First, ademas contiene etiquetas de SEO que ayudan al posicionamiento de la pagina",
       "technologies": [
         {
@@ -29,6 +29,33 @@
         }
       ],
       "img": "/img/goodgames.PNG"
+    },
+    {
+      "id": 3,
+      "name": "Lero",
+      "shortDescription": "Lero es una pagina basada en un E-comerce de HARDWARE realizada con REACT JS, que ademas persiste los datos en FIREBASE",
+      "description": "Lero es una pagina basada en un E-comerce de HARDWARE realizada con React JS utilizando componentes, eventos, HOOKS, Enrutadores, Context. Esta pagina esta conectada a FIREBASE donde obtiene el listado de productos, guarda las ordenes de compra, modifica el stock de productos y utiliza el servicio de LOGIN. Por otro lado utilize librerias como REACT-HOOK-FORM para validar los formularios y SWEET ALERT para las alertas relacionadas al inicio de sesion",
+      "technologies":[
+        {
+          "img-technology": "/img/bootstrap.png"
+        },
+        {
+          "img-technology": "/img/react.png"
+        }
+      ],
+      "img": "/img/lero.PNG"
+    },
+    {
+      "id": 4,
+      "name": "Portfolio",
+      "shortDescription": "Este es mi Portfolio personal realizado con NEXT JS",
+      "description": "Esta pagina contiene mi portfolio personal, fue desarrollada para mostrar mi informacion personal y de contacto, mis conocimientos, los proyectos que fui realizando en los cursos, ademas de los que seguire subiendo proximamente ya que continuo capacitandome",
+      "technologies":[
+        {
+          "img-technology": "/img/nextjs.png"
+        }
+      ],
+      "img": "/img/portfolio.PNG"
     }
   ]
 }
