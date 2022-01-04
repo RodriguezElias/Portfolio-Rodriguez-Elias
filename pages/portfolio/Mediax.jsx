@@ -31,7 +31,7 @@ export default function Mediax() {
         ) : (
           <div className={styles.image}>
             <Image
-              src="https://firebasestorage.googleapis.com/v0/b/lero-9025b.appspot.com/o/mediaxgif.gif?alt=media&token=d29bcfc6-f119-4fbb-9545-fd49334db169"
+              src="/img/mediaxgif.gif"
               alt="mediax"
               width={250}
               height={200}

@@ -34,6 +34,7 @@ export default function Layouts({ children, title, description }) {
                 width={200}
                 height={200}
                 layout="responsive"
+                alt="me"
               ></Image>
             </div>
           </Link>
@@ -80,6 +81,7 @@ export default function Layouts({ children, title, description }) {
             width={100}
             height={100}
             layout="responsive"
+            alt="me"
           ></Image>
         </div>
         <ul className={styles.containerMenu}>
@@ -113,7 +115,6 @@ export default function Layouts({ children, title, description }) {
       <main className={styles.main}>
         <>{children}</>
       </main>
-      <footer>footer</footer>
     </>
   );
 }

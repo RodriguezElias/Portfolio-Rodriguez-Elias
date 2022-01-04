@@ -32,7 +32,7 @@ export default function GoodGames() {
         ) : (
           <div className={styles.image}>
             <Image
-              src="https://firebasestorage.googleapis.com/v0/b/lero-9025b.appspot.com/o/goodgamesgif.gif?alt=media&token=ed87a017-4136-49fc-909f-e53b941feaad"
+              src="/img/goodgamegif.gif"
               alt="Goodgames"
               width={250}
               height={200}

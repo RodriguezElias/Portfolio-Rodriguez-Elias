@@ -31,7 +31,7 @@ export default function Portfolio() {
         ) : (
           <div className={styles.image}>
             <Image
-              src="https://firebasestorage.googleapis.com/v0/b/lero-9025b.appspot.com/o/portfoliogif.gif?alt=media&token=fe7dc7f0-f448-4828-a6dc-3bf04998a34c"
+              src="/img/portfoliogif.gif"
               alt="portfolio"
               width={250}
               height={200}

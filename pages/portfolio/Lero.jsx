@@ -31,7 +31,7 @@ export default function Lero() {
         ) : (
           <div className={styles.image}>
             <Image
-              src="https://firebasestorage.googleapis.com/v0/b/lero-9025b.appspot.com/o/lerogif.gif?alt=media&token=86cb9607-1e2b-4ab0-b0a2-fa331905d819"
+              src="/img/lerogif.gif"
               alt="lero"
               width={250}
               height={200}
